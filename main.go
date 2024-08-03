@@ -43,7 +43,6 @@ func main() {
 		}
 
 		return c.Status(fiber.StatusCreated).JSON(fiber.Map{
-			"message":  "File uploaded successfully",
 			"filepath": "/" + folderPath + uniqueFilename,
 		})
 	})
